@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  postgres:
+    image: postgres:latest
+    hostname: postgres
+    container_name: postgres
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: thuyvu
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: myblog
